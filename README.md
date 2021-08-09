@@ -1,6 +1,6 @@
 # Code-Tracking
 
-This is for learning python, using GitHub as a development tool.
+This is for learning python, using GitHub as a development tool. I want to learn how to version control projects with git.
 
 ## Getting Started
 
