@@ -10,5 +10,6 @@ print("The first item in the list (IP):" + my_list[0])
 print("The second item in the list (port):" + str(my_list[1])
 
 #display the third item in the list        
-print("The last item in the list (state):" + my_list[2])
+print("The last item in the list (state): " + my_list[2] )
+
 
