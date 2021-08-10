@@ -4,10 +4,15 @@ genre = input("What type of manga would you like to read?")
 
 
 if genre == "romance"
-    print("We recommend reading Akatsuki No Yona")
+    message = 'We recommend reading Akatsuki No Yona'
 
 if genre == "psychological"
-    print("We recommend reading Psycho Pass")
+    message = 'We recommend reading Psycho Pass'
 
 if genre == "violent"
-    print("We recommend reading Attack on Titan")
+    message = 'We recommend reading Attack on Titan'
+
+else:
+    message = 'See our list of different genres'
+
+print(message)
