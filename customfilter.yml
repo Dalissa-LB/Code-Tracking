@@ -1,0 +1,16 @@
+---
+- name: Making a custom filter
+  hosts: localhost
+  gather_facts: no
+
+  vars:
+    numberslist: [2,6,9,15,16,53,84]
+    foodlist: [eggs, bacon, toast]
+    
+
+  tasks: 
+
+  # Using capitalize
+  - name: The capitalize filter
+    debug:
+      msg: "Show me the capital letter in the list: '{{ foodlist|capitalize }}'"  
