@@ -1,0 +1,18 @@
+---
+- name: Ansible rest and tags
+  hosts: localhost
+  gather_facts: false
+
+  ## Lookup plugins can be used anywhere you can use templating in Ansible-
+  ## in a play, in variables files, or in Jinja2 templates for the template
+  ## module
+  vars:
+          myrsakey: "{{ lookup('file', '/home/student/.ssh/id_rsa.pub') }}"
+
+  tasks:
+  - name: Key prep
+    debug:
+      msg: "Your RSA key is {{ myrsakey }}"
+    tags:
+     - keytime
+     - vmprep
